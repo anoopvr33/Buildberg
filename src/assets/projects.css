@@ -1,0 +1,135 @@
+/* ProjectsSection.css */
+
+.projects {
+  padding: 80px 20px;
+  margin-top: 50px;
+  /* background: #e5b9b9; */
+}
+
+.projects-container {
+  width: 90%;
+  max-width: 100rem;
+  min-height: 320px;
+  margin: auto;
+  /* x-width: 80%; */
+  /* background: #000; */
+  /* margin: 0 auto; */
+}
+
+.projects-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card */
+.project-card {
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(
+    90deg,
+    /* rgba(180, 1, 49, 0.877), */ #00000005
+  );
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.pop-card {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  padding: 30px 10px;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.pop-card .img-scroll {
+  width: 100%;
+  height: fit-content;
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.pop-card .img-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+.pop-card .img-scroll::-webkit-scrollbar-thumb {
+  background: #dedede;
+  border-radius: 10px;
+}
+.pop-card .img-scroll::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.pop-card img {
+  width: 90%;
+  height: 300px;
+  flex-shrink: 0;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.project-image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.08);
+}
+
+/* Title */
+.project-title {
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}

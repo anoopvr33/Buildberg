@@ -1,0 +1,138 @@
+/* ContactPage.css */
+
+.contact-page {
+  width: 100%;
+  padding: 60px 20px;
+  background: #ffffff;
+}
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000000;
+  margin-top: 140px;
+  padding: 5px 10px;
+}
+.contact-title-p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  padding: 0px 10px;
+  margin-bottom: 40px;
+}
+/* Top Section */
+.contact-top {
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Map */
+.contact-map {
+  width: 100%;
+  height: 350px;
+  background: #ddd;
+}
+
+/* Contact Info */
+.contact-info {
+  background: #00000005;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  color: #d21a1a;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 15px;
+}
+
+/* Form Section */
+.contact-form-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form-section h2 {
+  color: #000000;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.contact-form {
+  background: white;
+  padding: 40px;
+}
+
+/* Form Layout */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0b7dbf;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.submit-btn {
+  background: #8b1c3d;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #d34677;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-top {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

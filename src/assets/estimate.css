@@ -1,0 +1,77 @@
+.estimate {
+  background: #ffffff;
+  background-image: url("/30087788_v915-wit-008-k.jpg");
+  background-position: 100%;
+  background-size: cover;
+  padding: 10vw 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  line-height: 1.5;
+  width: 100%;
+}
+.estimate div {
+  width: 100%;
+  max-width: 650px;
+  /* margin: 0 auto; */
+}
+.estimate h1 {
+  font-size: 140%;
+}
+.estimate p {
+  text-align: justify;
+  margin-top: 20px;
+}
+.estimate img {
+  width: 100%;
+  min-width: 200px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.323);
+}
+.estimate .sub-1 {
+  border: 1px solid rgba(255, 0, 0, 0.207);
+  border-radius: 10px;
+  padding: 5vw;
+  /* flex-shrink: 0; */
+  background: #ffffff;
+}
+.estimate .sub-2 {
+  /* width: 100%; */
+  min-width: 250px;
+  /* background: #000; */
+  /* max-width: 500px; */
+  height: 550px;
+  display: flex;
+  /* flex-shrink: 0; */
+  justify-content: center;
+}
+.estimate .sub-2 .float {
+  margin: auto;
+  margin-bottom: 0px;
+  margin-left: -100px;
+}
+.estimate button {
+  padding: 10px 20px;
+  border: none;
+  background: #da2b2b;
+  color: #fff;
+}
+@media screen and (min-width: 900px) {
+  .estimate {
+    flex-direction: row;
+    align-items: center;
+    /* gap: -100px; */
+    justify-content: center;
+    /* background: #000; */
+    gap: 50px;
+  }
+  .estimate {
+    background-position: center;
+  }
+  .estimate h1 {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,95 @@
+.about {
+  padding: 80px 20px;
+  background-image: url("/30087788_v915-wit-008-k.jpg");
+  background-size: cover;
+  background-position: start;
+  padding-bottom: 100px;
+  /* height: 100vh; */
+  /* background: #ff8686; */
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.about-card {
+  background: white;
+  padding: 60px 30px 30px 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.095);
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); */
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+}
+
+.about-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  object-fit: cover;
+  top: -65px;
+  left: 10%;
+  /* z-index: 1; */
+  /* margin-bottom: 20px; */
+}
+
+.about-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.about-role {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    background-position: center;
+  }
+  .about-grid {
+    display: grid;
+    margin-top: 150px;
+    /* gap: 10px; */
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-card {
+    padding: 80px 40px 40px 40px;
+  }
+  .about-image {
+    width: 130px;
+    height: 130px;
+    top: -75px;
+    background: #000;
+  }
+}
